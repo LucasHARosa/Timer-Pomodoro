@@ -144,9 +144,76 @@ react router dom
  
  ## Biblioteca de icones
 
-Aula 11 Finalizando Sidebar - A biblioteca de imagens é a https://phosphoricons.com/
+A biblioteca de imagens é a https://phosphoricons.com/
 
 ```sh
     $ npm i phosphor-react
 ```
-    
+
+## Formulários com React
+
+```sh
+    $ npm i react-hook-form
+```
+```ts
+// register dá o nome para o input e tem metodos como retorno
+// handleSubmit é um metodo de sumbmit
+// watch observa as mudanças feitas dentro do input
+const { register, handleSubmit, watch, reset } = useForm<NewCycleFormData>({
+  resolver: zodResolver(newCycleFormValidationSchema),
+  defaultValues: {
+    task: '',
+    minutesAmount: 0,
+  },
+})
+```
+## Biblioteca de validação
+
+```sh
+    $ npm i zod
+```
+Exemplo de como usar a validação:
+
+```ts
+const newCycleFormValidationSchema = zod.object({
+  task: zod.string().min(1, 'Informe a tarefa'),
+  minutesAmount: zod
+    .number()
+    .min(5, 'O ciclo precisa ser de no mínimo 5 minutos.')
+    .max(60, 'O ciclo precisa ser de no máximo 60 minutos.'),
+})
+// É possivel inferir o tipo dos dados a partir da função acima
+// É possível trocar isso por uma interface
+type NewCycleFormData = zod.infer<typeof newCycleFormValidationSchema>
+```
+
+## integrar o hook-form com zod
+
+```sh
+    $ npm i @hookform/resolvers
+```
+
+## useEffect
+
+Recebe como argumento uma função e uma variável. Monitora uma variável e executa a funçao depois de qualquer mudança nela.
+
+```ts
+```
+Se eu quero que ele execute somente quando a pagina for recarregada é só passar um array vazio no segundo argumento
+```ts
+```
+
+## Trabalhando com Datas
+
+
+```sh
+    $ npm i date-fns
+```
+
+## context API
+
+Permite compartilhar várias informações entre componentes do react sem usar props
+
+## useReduce
+
+Substitui o useState quando muitas informaç~eos complexas precisam ser mudadas e cria um switch case para essas mudanças
