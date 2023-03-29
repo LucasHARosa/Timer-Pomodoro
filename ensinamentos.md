@@ -217,3 +217,7 @@ Permite compartilhar várias informações entre componentes do react sem usar p
 ## useReduce
 
 Substitui o useState quando muitas informaç~eos complexas precisam ser mudadas e cria um switch case para essas mudanças
+
+## Immer
+
+Facilita o trabalho com as variáveis, trabalharemos com o immer para cuidar da imutabilidade de estados 

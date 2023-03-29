@@ -19,10 +19,10 @@ export function NewCycleForm() {
       />
 
       <datalist id="task-suggestions">
-        <option value="Projeto 1" />
-        <option value="Projeto 2" />
-        <option value="Projeto 3" />
-        <option value="Banana" />
+        <option value="Estudar ReactJS" />
+        <option value="Mandar Curriculo" />
+        <option value="Escrever TCC" />
+        <option value="Estudar NodeJS" />
       </datalist>
 
       <label htmlFor="minutesAmount">durante</label>
