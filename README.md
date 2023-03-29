@@ -1,5 +1,5 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/LucasHARosa/)
-![GitHub language count](https://img.shields.io/github/languages/count/LucasHARosa/)
+![GitHub repo size](https://img.shields.io/github/repo-size/LucasHARosa/Timer_Pomodoro)
+![GitHub language count](https://img.shields.io/github/languages/count/LucasHARosa/Timer_Pomodoro)
 ![GitHub top language](https://img.shields.io/github/languages/top/LucasHARosa/)
 ![GitHub last commit](https://img.shields.io/github/last-commit/LucasHARosa/)
 
