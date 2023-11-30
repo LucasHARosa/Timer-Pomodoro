@@ -5,11 +5,12 @@ import { History } from './pages/History'
 import { Home } from './pages/Home'
 
 export function Router() {
+  console.log('Router')
   return (
     <Routes>
-      <Route path="/" element={<DefaultLayout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/history" element={<History />} />
+      <Route path="/Timer_Pomodoro/" element={<DefaultLayout />}>
+        <Route path="/Timer_Pomodoro/" element={<Home />} />
+        <Route path="/Timer_Pomodoro/history/" element={<History />} />
       </Route>
     </Routes>
   )
