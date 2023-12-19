@@ -1,6 +1,6 @@
 import { differenceInSeconds } from 'date-fns'
 import { CountdownContainer, Separator } from './styles'
-import { useContext, useEffect } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { CyclesContext } from '../../../../contexts/CyclesContext'
 
 export function Countdown() {
@@ -13,6 +13,7 @@ export function Countdown() {
   } = useContext(CyclesContext)
 
   const totalSeconds = activeCycle ? activeCycle.minutesAmount * 60 : 0
+  const [audio] = useState(new Audio('./clock-alarm-8761.mp3'))
 
   useEffect(() => {
     let interval: number
@@ -27,6 +28,7 @@ export function Countdown() {
           markCurrentCycleAsFinished()
           setSecondsPassed(totalSeconds)
           clearInterval(interval)
+          audio.play()
         } else {
           setSecondsPassed(secondsDifference)
         }
@@ -41,6 +43,7 @@ export function Countdown() {
     activeCycleId,
     setSecondsPassed,
     markCurrentCycleAsFinished,
+    audio,
   ])
 
   const currentSeconds = activeCycle ? totalSeconds - amountSecondsPassed : 0

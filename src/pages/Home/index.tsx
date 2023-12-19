@@ -2,7 +2,7 @@ import { HandPalm, Play } from 'phosphor-react'
 import { FormProvider, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as zod from 'zod'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 
 import {
   HomeContainer,
@@ -38,10 +38,11 @@ export function Home() {
   })
 
   const { handleSubmit, watch, reset } = newCycleForm
-
+  const [audio] = useState(new Audio('./hotel-bell-ding-1-174457.mp3'))
   function handleCreateNewCycle(data: NewCycleFormData) {
     createNewCycle(data)
     reset()
+    audio.play()
   }
 
   const task = watch('task')

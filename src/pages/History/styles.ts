@@ -15,6 +15,8 @@ export const HistoryList = styled.div`
   flex: 1;
   overflow: auto;
   margin-top: 2rem;
+  max-height: 58vh;
+  overflow-y: 'auto';
   table {
     width: 100%;
     border-collapse: collapse;
@@ -49,6 +51,16 @@ export const HistoryList = styled.div`
         padding-right: 1.5rem;
       }
     }
+  }
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+    padding: 0.25rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: ${(props) => props.theme['gray-700']};
+  }
+  ::-webkit-scrollbar-thumb {
+    background: ${(props) => props.theme['gray-600']};
   }
 `
 const STATUS_COLORS = {
