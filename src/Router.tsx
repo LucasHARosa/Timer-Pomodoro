@@ -8,9 +8,9 @@ export function Router() {
   console.log('Router')
   return (
     <Routes>
-      <Route path="/Timer_Pomodoro/" element={<DefaultLayout />}>
-        <Route path="/Timer_Pomodoro/" element={<Home />} />
-        <Route path="/Timer_Pomodoro/history/" element={<History />} />
+      <Route path="/Timer-Pomodoro/" element={<DefaultLayout />}>
+        <Route path="/Timer-Pomodoro/" element={<Home />} />
+        <Route path="/Timer-Pomodoro/history/" element={<History />} />
       </Route>
     </Routes>
   )
