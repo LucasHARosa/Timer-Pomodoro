@@ -1,7 +1,7 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/LucasHARosa/Timer_Pomodoro)
-![GitHub language count](https://img.shields.io/github/languages/count/LucasHARosa/Timer_Pomodoro)
-![GitHub top language](https://img.shields.io/github/languages/top/LucasHARosa/Timer_Pomodoro)
-![GitHub last commit](https://img.shields.io/github/last-commit/LucasHARosa/Timer_Pomodoro)
+![GitHub repo size](https://img.shields.io/github/repo-size/LucasHARosa/Timer-Pomodoro)
+![GitHub language count](https://img.shields.io/github/languages/count/LucasHARosa/Timer-Pomodoro)
+![GitHub top language](https://img.shields.io/github/languages/top/LucasHARosa/Timer-Pomodoro)
+![GitHub last commit](https://img.shields.io/github/last-commit/LucasHARosa/Timer-Pomodoro)
 
 # Timer Pomodoro
 
